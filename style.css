@@ -1,3 +1,4 @@
+
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -49,12 +50,33 @@ body {
 
 /* Hero Section */
 .home {
-    min-height: 90vh;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
-    gap: 40px;
+
+    gap: 80px;
+
+    padding: 0 80px;
+}
+.hero-text {
+    max-width: 650px;
+}
+
+.hero-text h1 {
+    font-size: 3.8rem;
+}
+
+.hero-text h3 {
+    font-size: 1.8rem;
+    white-space: nowrap;
+}
+
+.hero-text p {
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.8;
 }
 
 /* Hero Text */
@@ -372,102 +394,6 @@ section::after {
 section:last-of-type::after {
     display: none;
 }
-/* Collage Container */
-.collage {
-    position: relative;
-    height: 320px;
-    overflow: visible;
-}
-
-
-.collage-img {
-    position: absolute;
-    border-radius: 16px;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    overflow: hidden;
-}
-.collage-img:hover {
-    transform: scale(2.00);
-    box-shadow: 0 20px 20px rgba(56, 189, 248, 0.45);
-    z-index: 10;
-}
-
-/* Main image */
-.img-main {
-    width: 200px;
-    height: 260px;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-}
-
-/* Top image */
-.img-top {
-    width: 140px;
-    height: 180px;
-    top: 0;
-    left: 10px;
-    z-index: 2;
-    opacity: 0.9;
-}
-
-/* Bottom image */
-.img-bottom {
-    width: 140px;
-    height: 180px;
-    bottom: 0;
-    right: 10px;
-    z-index: 1;
-    opacity: 0.9;
-}
-
-/* Optional hover polish */
-.collage-img:hover {
-    transform: scale(1.05);
-    z-index: 5;
-}
-/* Hide checkboxes */
-.img-toggle {
-    display: none;
-}
-
-/* Label should act like click target */
-.hero-card label {
-    cursor: zoom-in;
-}
-
-
-
-/* Make images clickable */
-.hero-card label {
-    cursor: zoom-in;
-}
-
-/* Background overlay */
-.zoom-toggle:checked + label::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(2, 6, 23, 0.9);
-    z-index: 998;
-}
-
-/* Zoomed image */
-.zoom-toggle:checked + label img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.9);
-    max-width: 90vw;
-    max-height: 90vh;
-    z-index: 999;
-    cursor: zoom-out;
-    transition: transform 0.45s ease;
-}
 
 /* Project Modal */
 .project-modal {
@@ -611,4 +537,60 @@ section:last-of-type::after {
     max-height: 92vh;
     border-radius: 18px;
     box-shadow: 0 40px 120px rgba(56,189,248,0.45);
+}
+
+/* Professional Profile Photo */
+
+.profile-card {
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+
+    border: 4px solid rgba(56,189,248,0.4);
+
+    box-shadow: 0 0 40px rgba(56,189,248,0.15);
+}
+
+.building {
+    padding: 80px 60px;
+}
+
+.building-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 30px;
+}
+
+.building-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(56,189,248,0.12);
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-outline {
+    padding: 12px 24px;
+
+    border: 1px solid #38bdf8;
+
+    border-radius: 8px;
+
+    color: #38bdf8;
+
+    text-decoration: none;
 }

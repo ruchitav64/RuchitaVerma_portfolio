@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,43 +26,38 @@
     </header>
 
     <!-- Home Section -->
-   <section id="home" class="home">
-    <div>
-        <h2>Hi, I am <span>Ruchita Verma</span></h2>
+<section id="home" class="home">
+
+    <div class="hero-text">
+
+        <h1>Ruchita Verma</h1>
+
+        <h3>Software Developer | AI/ML Enthusiast</h3>
+
         <p>
-            AI/ML Enthusiast specializing in building intelligent applications,
-            machine learning models, and modern web solutions.
+            Building intelligent applications, scalable web
+            solutions, and data-driven systems.
         </p>
 
-        <a href="assets/Ruchita_Verma_Resume.pdf" class="btn" download>Download Resume</a>
+        <div class="hero-buttons">
+            <a href="assets/resume.pdf" class="btn" download>
+                Download Resume
+            </a>
+
+            <a href="https://github.com/ruchitav64/RuchitaVerma_portfolio" class="btn-outline">
+                GitHub
+            </a>
+        </div>
+
     </div>
 
-   <div class="hero-card collage">
+    <div class="profile-card">
+        <img src="assets/images/img1.jpg"
+             alt="Ruchita Verma"
+             class="profile-image">
+    </div>
 
-    <!-- Image 1 -->
-    <input type="checkbox" id="zoom1" class="zoom-toggle">
-    <label for="zoom1">
-        <img src="assets/images/img1.jpg" class="collage-img img-main" alt="Main">
-    </label>
-
-    <!-- Image 2 -->
-    <input type="checkbox" id="zoom2" class="zoom-toggle">
-    <label for="zoom2">
-        <img src="assets/images/img2.jpg" class="collage-img img-top" alt="Top">
-    </label>
-
-    <!-- Image 3 -->
-    <input type="checkbox" id="zoom3" class="zoom-toggle">
-    <label for="zoom3">
-        <img src="assets/images/img3.jpeg" class="collage-img img-bottom" alt="Bottom">
-    </label>
-
-</div>
-
-
-    
-
-    </section>
+</section>
     <!-- About Section -->
      <section id="about" class="about">
     <div class="about-card">
@@ -84,13 +80,13 @@
     <div class="skills-grid">
 
         <div class="skill-card">
-            <h4>Programming</h4>
-            <p>Python, Java, C</p>
+            <h4>Languages</h4>
+            <p>Python, C, C++</p>
         </div>
 
         <div class="skill-card">
-            <h4>AI / Machine Learning</h4>
-            <p>CNN, Machine Learning, TensorFlow, Keras, OpenCV</p>
+            <h4>Framework & Libraries</h4>
+            <p>TensorFlow, Keras, NumPy, Pandas,OpenCV</p>
         </div>
 
         <div class="skill-card">
@@ -99,33 +95,43 @@
         </div>
 
         <div class="skill-card">
-            <h4>Tools & Platforms</h4>
-            <p>Git, GitHub, VS Code, Firebase</p>
+            <h4>Data & Tools</h4>
+            <p>SQL, Tableau, Git, GitHub, VS Code, Firebase</p>
         </div>
-        
 
+        <div class="skill-card">
+            <h4>Concepts</h4>
+            <p>DSA, OOP, Machine Learning</p>
 
     </div>
     </section>
+
+    <section id="building" class="building">
+    <h3 class="section-title">Currently Building</h3>
+
+    <div class="building-grid">
+
+        <div class="building-card">
+            <h4>AI Interview Preparation Platform</h4>
+            <p>
+                Developing a full-stack platform that helps users practice
+                technical interviews, track progress, and receive AI-powered feedback.
+            </p>
+
+            <span class="tech">
+                React · Flask/FastAPI · MongoDB · AI Integration
+            </span>
+        </div>
+
+
+    </div>
+</section>
     <!-- Projects Section -->
      <section id="projects" class="projects">
     <h3 class="section-title">Projects</h3>
 
     <div class="projects-grid">
 
-        <div class="project-card">
-            <h4>SereneAI – Mental Health Chatbot</h4>
-            <p>
-                An AI-powered chatbot designed to provide emotional support,
-                stress relief, and mental well-being guidance using machine learning.
-            </p>
-            <span class="tech">Python · ML · NLP · Flask</span>
-
-            <div class="project-links">
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Live Demo</a>
-            </div>
-        </div>
 
         <div class="project-card">
             <h4>CNN-Based Skin Disease Detector</h4>
@@ -168,6 +174,7 @@
             <div class="project-links">
                 <button id="flowchartDetailsBtn" type="button" class="details-btn">Details</button>
         </div>
+
         </div>
 
     </div>
@@ -179,8 +186,10 @@
 
     <div class="contact-card">
         <p>
-            I am open to internships, projects, and learning opportunities in
-            AI/ML and software development. Feel free to reach out!
+            I am currently open to Software Development,
+AI/ML, and Data Analytics opportunities. </p>
+<p>Whether you have a project, internship,
+or full-time role, I'd love to connect.
         </p>
 
         <div class="contact-links">
@@ -201,7 +210,7 @@
 </section>
 
 <footer class="footer">
-    <p>© 2026 Ruchita Verma. Built with ❤️ and curiosity.</p>
+    <p>© 2026 Ruchita Verma.</p>
 </footer>
 
 <!-- Flowchart Project Details Modal -->
